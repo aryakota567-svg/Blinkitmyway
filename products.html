@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+      <nav class="nav-container">
+       <div>
+         <h1 style="color: #F8CB46; font-size: 45px;" >blink<span style="color: #0C831F;">it</span></h1>
+       </div>
+
+     
+
+        <div >
+        
+        <div class="userlog">
+            <a id="welcome" class="nameuser"></a>
+        <button onclick="removeAccess()" class="logout">Logout</button>
+        </div>
+        <a href="cart.html" class="mycart"> <i class="bi bi-cart3"></i> My Cart</a>
+        
+        </div>
+    </nav>
+
+
+
+
+   
+
+    
+
+
+
+   <div class="parent-cont">
+   
+       <div>
+         <ul class="list-container">
+            <li class="cat" onclick="filterProducts('Dairy')">Dairy</li><hr/>
+            
+            <li class="cat" onclick="filterProducts('Fruits')">Fruits</li> 
+            <hr/>
+            <li class="cat" onclick="filterProducts('Vegetables')">Vegetables</li>
+             <hr/>
+            <li class="cat" onclick="filterProducts('Snacks')">Snacks</li> 
+            <hr/>
+            <li class="cat" onclick="filterProducts('Bakery')">Bakery</li>
+            <hr/>
+            <li class="cat" onclick="filterProducts('Meat')">Meat</li> 
+            <hr/>
+            <li class="cat" onclick="filterProducts('Beverages')">Beverages</li>
+            <hr/>
+            <li class="cat" onclick="filterProducts('Grocery Staples')">Grocery Staples</li>
+            <hr/>
+            <li class="cat" onclick="filterProducts('Household Goods')">Household</li>
+            <hr/>
+            <li class="cat" onclick="filterProducts('Baby Care')">Baby ware</li>
+
+
+
+            
+        </ul>
+           
+       </div>
+   
+    <div id="productContainer" class = "product-container">
+
+    </div>
+
+   </div>
+
+
+   
+<footer class="blinkit-footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+            
+            <h2 class="footer-logo"><span class="logo-yellow">blink</span><span class="logo-green">it</span></h2>
+            <p>Your custom grocery and daily essentials delivery app. Freshness delivered to your doorstep in minutes.</p>
+        </div>
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="#" onclick="removeAccess()">Logout</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column app-download-column">
+                <h3>Experience Blinkit App</h3>
+                <div class="app-buttons">
+                    <button class="app-store-btn" onclick="simulateDownload('Google Play')">
+                        <span class="btn-subtext">Get it on</span>
+                        <span class="btn-maintext">Google Play</span>
+                    </button>
+                    <button class="app-store-btn" onclick="simulateDownload('App Store')">
+                        <span class="btn-subtext">Download on the</span>
+                        <span class="btn-maintext">App Store</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact & Support</h3>
+                <ul>
+                    <li><a href="#" onclick="showSupportAlert()">Help Center</a></li>
+                    <li><a href="#" onclick="showSupportAlert()">Report an Issue</a></li>
+                    <li><p class="footer-contact-info">Support: support@blinkitway.com</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Trust Badging Banner -->
+    <div class="footer-features-banner">
+        <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <p><strong>10 Minute Delivery</strong> Everything you need, fast</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🛡️</span>
+            <p><strong>Best Prices & Offers</strong> Direct savings to you</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">💸</span>
+            <p><strong>Secure Payments</strong> Multiple safe transaction options</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Blinkit In My Way. All rights reserved.</p>
+    </div>
+</footer>
+
+   <script src= "script.js">
+    </script>
+    
+</body>
+</html>

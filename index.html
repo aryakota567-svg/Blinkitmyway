@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    
+   
+
+    <section>
+          <nav class="nav-container">
+       <div>
+         <h1 style="color: #F8CB46; font-size: 45px;" >blink<span style="color: #0C831F;">it</span></h1>
+       </div>
+
+     
+
+        <div  class="rightsidecont">
+        
+        <div class="userlog">
+            <a id="welcome" class="nameuser"></a>
+        <button onclick="removeAccess()" class="logout">Logout</button>
+        </div>
+        <div>
+            <a href="cart.html" class="mycart"> <i class="bi bi-cart3"></i> My Cart</a>
+        </div>
+        
+        </div>
+    </nav>
+
+    </section>  
+
+
+
+
+<section>
+     <div style="position: relative;">
+    
+    <div>
+        <img src = "./images/blinkit.png.png" class="homeheroimg" />
+    </div>
+    <div class="herohomecontent">
+     <h1 class="h1tags">Stock up on daily essentials</h1>
+     <p class="ptagget">Get farm-fresh goodness & a range of exotic<br>
+        fruits, Vegetables ,eggs & more</p>
+    <a href="products.html"><button class="btn-shop">Shop Now</button></a>
+    </div>
+
+</div>
+</section>
+
+
+
+
+ 
+
+<div class="main-productcon">
+    <div class="categorycontainer" onclick="filterProducts('Dairy')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfsa21JxWPXSaUvELNfd67H9eovilu4LKrtXdIVy7zCg&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Dairy, milk & Yogurt</p>
+        </div>
+    </div>
+
+    <div class="categorycontainer" onclick="filterProducts('Fruits')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fDCM_hZ3NOR5uiIfQlRR05sU8JGs_9xWvLNyHmy8Pw&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Fresh Fruits</p>
+        </div>
+    </div>
+
+    <div class="categorycontainer" onclick="filterProducts('Vegetables')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYW3lzU_aPUHVSsDW1tbsz9ZPXZCmlsANMPVHgiWw_Q&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Vegetables & More</p>
+        </div>
+    </div>
+
+     <div class="categorycontainer" onclick="filterProducts('Snacks')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUOQ6vyzALdhi3zuPmQolbae4V0LxaW01TJyQfV_juUQ&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Snacks & Munchies</p>
+        </div>
+    </div>
+
+     <div class="categorycontainer" onclick="filterProducts('Bakery')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx9oLXC-brQskARAZ9i20gzlEF2JSslkeTzcAZ-S4czA&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Bakery & Breads</p>
+        </div>
+    </div>
+
+     <div class="categorycontainer" onclick="filterProducts('Meat')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztZluc3JjFHFXp93FdQXnztHRqzkUr6JFwRE7qRCx8g&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Meat & Flesh</p>
+        </div>
+    </div>
+
+     <div class="categorycontainer" onclick="filterProducts('Beverages')">
+        <div>
+        <img src ="https://5.imimg.com/data5/SELLER/Default/2023/1/QF/BL/FT/163771626/cold-drinks-supplier.jpg" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Cool Drinks & Juices</p>
+        </div>
+    </div>
+
+    <div class="categorycontainer" onclick="filterProducts('Grocery Staples')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ermEoZLq8D3B-uSj4L7EuGeIVscYLe1O-BhjbzaVrQ&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Atta ,Rice & Dal</p>
+        </div>
+    </div>
+
+     <div class="categorycontainer" onclick="filterProducts('Household Goods')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0DWTWP3PbBVDmfpdNbDRdGTLqgsdwkqUyut-4szQBeA&s=10"  class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Cleaning Essentials</p>
+        </div>
+    </div>
+
+     <div class="categorycontainer" onclick="filterProducts('Baby Care')">
+        <div>
+        <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPzCKfWWD9H3dIH6MNDup4lD9kNmtAEa1v_3Eby1QgAw&s=10" class="homeimagecon"/>
+        </div>
+        <div>
+            <p>Baby Care</p>
+        </div>
+    </div>
+
+     
+</div>
+
+
+
+   
+
+<footer class="blinkit-footer">
+    <div class="footer-top">
+        <div class="footer-brand">
+           
+            <h2 class="footer-logo"><span class="logo-yellow">blink</span><span class="logo-green">it</span></h2>
+            <p>Your custom grocery and daily essentials delivery app. Freshness delivered to your doorstep in minutes.</p>
+        </div>
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="#" onclick="removeAccess()">Logout</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column app-download-column">
+                <h3>Experience Blinkit App</h3>
+                <div class="app-buttons">
+                    <button class="app-store-btn" onclick="simulateDownload('Google Play')">
+                        <span class="btn-subtext">Get it on</span>
+                        <span class="btn-maintext">Google Play</span>
+                    </button>
+                    <button class="app-store-btn" onclick="simulateDownload('App Store')">
+                        <span class="btn-subtext">Download on the</span>
+                        <span class="btn-maintext">App Store</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact & Support</h3>
+                <ul>
+                    <li><a href="#" onclick="showSupportAlert()">Help Center</a></li>
+                    <li><a href="#" onclick="showSupportAlert()">Report an Issue</a></li>
+                    <li><p class="footer-contact-info">Support: support@blinkitway.com</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Trust Badging Banner -->
+    <div class="footer-features-banner">
+        <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <p><strong>10 Minute Delivery</strong> Everything you need, fast</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🛡️</span>
+            <p><strong>Best Prices & Offers</strong> Direct savings to you</p>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">💸</span>
+            <p><strong>Secure Payments</strong> Multiple safe transaction options</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Blinkit In My Way. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
